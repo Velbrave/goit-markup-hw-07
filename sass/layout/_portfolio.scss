@@ -1,0 +1,128 @@
+.section-hero {
+  padding-bottom: 94px;
+  background-color: var(--primary-white-color);
+}
+
+.section-hero-title {
+  text-align: center;
+}
+
+.section-button-port {
+  display: flex;
+  padding-top: 94px;
+  margin-bottom: 50px;
+
+}
+
+.button-port {
+  display: flex;
+  margin: 0 auto;
+  gap: 8px;
+
+}
+
+.button-port .item {
+  padding: 6px 22px;
+  color: var(--primary-text-color);
+  background-color: var(--second--bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: color var(--transition-duration), background-color var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.button-port .item:hover,
+.button-port .item:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.hero-page {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.hero-page-item {
+  width: 370px;
+  height: 402px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 6 * 30px) / 9);
+}
+
+.hero-page-item:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+
+.hero-page-images {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  transform: translateY(100%);
+  transition: transform var(--transition-duration);
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.hero-overlay-text {
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.link-meta:hover .hero-overlay,
+.link-meta:focus .hero-overlay {
+  transform: translateY(0%);
+}
+
+.hero-page-text {
+  width: 370px;
+  padding: 20px 24px;
+  border: 1px solid var(--primary-border-color);
+  border-top: none;
+}
+
+.page-title {
+  margin-bottom: 4px;
+}
+
+.link-meta {
+  transition: box-shadow var(--transition-duration);
+}
+
+.link-meta .page-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.link-meta .about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.link-meta:hover,
+.link-meta:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
