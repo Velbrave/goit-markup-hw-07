@@ -7,22 +7,20 @@
   padding-bottom: 94px;
 }
 
-.section-profile-title {
+.section-profile__title {
   margin-bottom: 50px;
   color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 42px);
   text-align: center;
 }
 
-.box {
+.list-box {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.box-atem {
+.list-box__item {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
@@ -30,7 +28,7 @@
   position: relative;
 }
 
-.box-profile-title {
+.list-box-title {
   position: absolute;
   bottom: 94px;
   display: flex;
@@ -39,7 +37,7 @@
 
 }
 
-.box-profile-list {
+.list-box-title__list {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -47,10 +45,8 @@
 
 }
 
-.box-profile-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+.list-box-title__text {
+  @include font(700, 14px, 16px);
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;

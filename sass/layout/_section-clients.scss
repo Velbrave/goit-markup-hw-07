@@ -2,25 +2,23 @@
   background-color: var(--primary-white-color)
 }
 
-.section-clients-title {
+.section-clients__title {
   padding-top: 94px;
   margin-bottom: 50px;
   color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 42px);
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.clients-page {
+.page-clients {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 94px;
 }
 
-.link-clients {
+.page-clients__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -37,12 +35,12 @@
   }
 }
 
-.icon-link-clients {
+.page-clients__icon {
   fill: var(--primary-icon-color);
   transition: fill var(--transition-duration), color var(--transition-duration);
 
-  .link-clients:hover &,
-  .link-clients:focus & {
+  .page-clients__link:hover &,
+  .page-clients__link:focus & {
     fill: var(--accent-color);
     border-color: var(--accent-color);
   }

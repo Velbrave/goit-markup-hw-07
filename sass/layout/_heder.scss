@@ -15,14 +15,14 @@
   column-gap: 106px;
 }
 
-.nav {
+.navigation {
   position: relative;
   display: flex;
   column-gap: 50px;
 
 }
 
-.nav-link {
+.navigation-link {
   display: flex;
   margin-left: auto;
   column-gap: 50px;
@@ -35,9 +35,7 @@
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(700, 26px, 31px);
   text-decoration: none;
 }
 
@@ -45,11 +43,9 @@
   color: var(--first-logo-color);
 }
 
-.nav a {
+.navigation a {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(500, 14px, 16px);
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color var(--transition-duration);
@@ -60,13 +56,11 @@
   }
 }
 
-
-
-.nav .studio-curent {
+.navigation .navigation__studio_curent {
   color: var(--accent-color);
 }
 
-.nav .studio-curent::after {
+.navigation .navigation__studio_curent::after {
   display: block;
   content: "";
   width: 48px;
@@ -78,11 +72,11 @@
   background-color: var(--accent-color);
 }
 
-.nav .portfolio-curent {
+.navigation .navigation__portfolio_curent {
   color: var(--accent-color);
 }
 
-.nav .portfolio-curent::after {
+.navigation .navigation__portfolio_curent::after {
   display: block;
   content: "";
   width: 78px;
@@ -94,41 +88,39 @@
   background-color: var(--accent-color);
 }
 
-.nav-link-item {
+.navigation-link__item {
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
 
-.nav-link-mail {
+.navigation-link__mail {
   fill: var(--title-text-color);
   transition: fill var(--transition-duration), color var(--transition-duration);
 
-  .nav-link-item:hover &,
-  .nav-link-item:focus & {
+  .navigation-link__item:hover &,
+  .navigation-link__item:focus & {
     fill: var(--accent-color);
   }
 }
 
 
 
-.nav-link-tel {
+.navigation-link__tel {
   fill: var(--title-text-color);
   transition: fill var(--transition-duration), color var(--transition-duration);
 
-  .nav-link-item:hover &,
-  .nav-link-item:focus & {
+  .navigation-link__item:hover &,
+  .navigation-link__item:focus & {
     fill: var(--accent-color);
   }
 }
 
 
 
-.nav-link a {
+.navigation-link a {
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(500, 14px, 16px);
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color var(--transition-duration);
