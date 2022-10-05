@@ -71,10 +71,11 @@
   fill: var(--primary-icon-color);
   background-color: var(--primary-white-color);
   transition: fill var(--transition-duration), background-color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
 }
 
-.item-link-working:hover,
-.item-link-working:focus {
-  fill: var(--primary-white-color);
-  background-color: var(--accent-color);
-}

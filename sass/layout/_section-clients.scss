@@ -30,20 +30,23 @@
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   transition: fill var(--transition-duration), border-color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .icon-link-clients {
   fill: var(--primary-icon-color);
   transition: fill var(--transition-duration), color var(--transition-duration);
+
+  .link-clients:hover &,
+  .link-clients:focus & {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
-.link-clients:hover,
-.link-clients:focus {
-  border-color: var(--accent-color);
-}
 
-.link-clients:hover .icon-link-clients,
-.link-clients:focus .icon-link-clients {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-}
+

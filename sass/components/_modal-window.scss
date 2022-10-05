@@ -30,12 +30,14 @@
 .modal-close-btn-icon {
   fill: var(--first-logo-color);
   transition: fill var(--transition-duration);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
 }
 
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-  fill: var(--accent-color);
-}
+
 
 .modal-title {
   font-weight: 700;

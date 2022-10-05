@@ -53,12 +53,14 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.nav a:hover,
-.nav a:focus {
-  color: var(--accent-color);
-}
+
 
 .nav .studio-curent {
   color: var(--accent-color);
@@ -101,22 +103,26 @@
 .nav-link-mail {
   fill: var(--title-text-color);
   transition: fill var(--transition-duration), color var(--transition-duration);
+
+  .nav-link-item:hover &,
+  .nav-link-item:focus & {
+    fill: var(--accent-color);
+  }
 }
 
-.nav-link-item:hover .nav-link-mail,
-.nav-link-item:focus .nav-link-mail {
-  fill: var(--accent-color);
-}
+
 
 .nav-link-tel {
   fill: var(--title-text-color);
   transition: fill var(--transition-duration), color var(--transition-duration);
+
+  .nav-link-item:hover &,
+  .nav-link-item:focus & {
+    fill: var(--accent-color);
+  }
 }
 
-.nav-link-item:hover .nav-link-tel,
-.nav-link-item:focus .nav-link-tel {
-  fill: var(--accent-color);
-}
+
 
 .nav-link a {
   color: var(--title-text-color);
@@ -126,9 +132,10 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.nav-link a:hover,
-.nav-link a:focus {
-  color: var(--accent-color);
-}

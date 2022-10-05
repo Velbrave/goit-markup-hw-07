@@ -86,13 +86,15 @@
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
   transition: fill var(--transition-duration), background-color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
 }
 
-.item-link-footer:hover,
-.item-link-footer:focus {
-  fill: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
+
 
 .container-form-title {
   padding-top: 12px;
@@ -119,16 +121,18 @@
   border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--primary-text-color);
+
+  &::placeholder {
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.footer-form-input::placeholder {
-  padding-left: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+
 
 .footer-form-btn {
   min-width: 200px;
