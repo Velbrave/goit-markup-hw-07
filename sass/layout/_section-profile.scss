@@ -4,7 +4,11 @@
 
 .section-profile-container {
   padding-top: 47px;
-  padding-bottom: 94px;
+  padding-bottom: 94px; 
+}
+
+.container.section-profile-container {
+  position: relative;
 }
 
 .section-profile__title {
@@ -24,9 +28,7 @@
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.container.section-profile-container {
-  position: relative;
-}
+
 
 .list-box-title {
   position: absolute;

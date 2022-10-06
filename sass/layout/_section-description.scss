@@ -36,7 +36,6 @@
   display: flex;
   width: 70px;
   height: 70px;
-
 }
 
 .description-desc {
@@ -51,10 +50,10 @@
 
 .description-desc__title {
   margin-bottom: 10px;
-}
-
-.description-desc .description-desc__title {
-  color: var(--primary-text-color);
-  @include font(700, 14px, 16px);
-  text-transform: uppercase;
+  
+  .description-desc & {
+    color: var(--primary-text-color);
+    @include font(700, 14px, 16px);
+    text-transform: uppercase;
+  }
 }
